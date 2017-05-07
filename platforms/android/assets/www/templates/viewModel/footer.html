@@ -1,0 +1,10 @@
+<div class="container-fluid">
+<ul class="pages" ng-init="num=0">
+    <li class="col-xs-3" ng-repeat="page in pages" ng-click="activeImg($index)">
+        <a ui-sref="{{page.cate}}">
+            <div><img class="md-logo" ng-src="{{imgUrl($index)}}" alt="{{page.alt}}"></div>
+            <span class="pageName">{{page.word}}</span>
+        </a>
+    </li>
+</ul>
+</div>

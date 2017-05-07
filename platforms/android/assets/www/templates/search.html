@@ -1,0 +1,18 @@
+<div class="searchPage">
+    <div class="header">
+        <span ng-model="location">上海<span class="caret"></span></span>
+        <form name="find" ng-submit="saveSearch()">
+        <input class="searchBox" ng-model="search" placeholder="搜索职位/公司/商区" type="text">
+        <div class="pull-right">
+        <span ng-click="clearSearch()">取消</span>
+        </div>
+        </form>
+    </div>
+    <div guess-search class=" container-fluid"></div>
+    <div >
+        <ul class="history">
+            <li class="item" ng-click="getSearch($index,searchList); saveSearch()" ui-sref="searchResult" ng-repeat="item in searchList  track by $index"><img class="sm-logo pull-left" src="img/home/icon-history.png" alt="search history"/><span>{{item}}</span></li>
+            <li class="grey text-center" ng-if=searchList.length ng-click="clearSearch()">清空搜索记录</li>
+        </ul>
+    </div>
+</div>

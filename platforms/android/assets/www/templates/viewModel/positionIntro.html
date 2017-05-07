@@ -1,0 +1,36 @@
+<div>
+    <div class="container-fluid position-list">
+        <ul infinite-scroll="getList()">
+            <li ng-repeat="position in list | filter:filterObj as list" style="height:140px;"
+                ui-sref="position({id:position.id})">
+                <div class="col-xs-3">
+                    <img class="imgLogo" ng-src="{{position.imgUrl}}" alt="{{position.company}}"/>
+                </div>
+                <div class="col-xs-6 details">
+                    <p class="bold">{{position.title}}</p>
+                    <p>{{position.company}}</p>
+                    <div class="intro">
+                        <span>{{position.location}}</span>
+                        <span>{{position.experience}}</span>
+                        <span>{{position.degree}}</span>
+                        <br/>
+                        <span>{{position.invest}} |</span>
+                        <span> {{position.qty}} |</span>
+                        <span> {{position.type}} </span>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <p class="red">{{position.salary}}</p>
+                    <p class="date">{{position.date}}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="no-data container-fluid" ng-if="!list.length">
+        <div class="nothing text-center">
+            <p><img class="sm-logo" src="img/home/icon-nodata.png" alt="nodata"/></p>
+            <p>暂时没有符合该搜索条件的职位</p>
+        </div>
+        <div guess-search></div>
+    </div>
+</div>

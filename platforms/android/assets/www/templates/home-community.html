@@ -1,0 +1,55 @@
+<div class="home-community">
+    <div class="header text-center container-fluid">
+        <span class="pull-left"><img class="sm-logo" src="img/home/icon-category.png" alt="category"/></span>
+        <span><img  style="width:70px;height:50px;" src="img/home/icon-community.png" alt="言职"/></span>
+        <span  class="pull-right"><img class="sm-logo" src="img/home/icon-chat.png" alt=""/></span>
+    </div>
+
+    <div class="carousel slide" id="myCarousel" >
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div ng-repeat="item in list" ng-class={item:true,active:$index==0}>
+                <a ui-sref="{{item.sref}}">
+                    <img class="banner" ng-src="{{item.src}}" alt="{{item.alt}}">
+                    <div class="carousel-caption">
+                        <span>{{item.words}}</span><span>···</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hot container-fluid">
+        <img src="img/home/hot.png" alt="hot"/>
+        <span>言职精选-此刻最热的内容</span>
+        <span class="pull-right grey">&gt;</span>
+    </div>
+    <div class="bgColor"></div>
+
+    <div class="article container-fluid">
+        <p class="grey">一个新问题来自- <strong>运营</strong></p>
+        <h3>如何看待运营的发展前景？</h3>
+        <div >
+            <div class="people">
+            <img src="img/home/headPic.png" alt="headPhoto"/>
+            <span>新加坡破</span>
+            </div>
+            <span class="grey pull-right">4月6日</span>
+            <div class="grey">
+                普通的：内容运营--伪原创 活动运营--各种模仿竞品的爆款活动 产品运营--给产品提供需求
+            </div>
+            <div class="assessment">
+                <span ng-click="acount=acount+1" ng-init="acount=0"><img class="sm-logo"src="img/home/support.png" alt="agree"><span ng-if="acount">{{acount}}</span></span>
+               <a ui-sref="question"> <span ng-click="mcount=mcount+1" ng-init="mcount=0"><img class="sm-logo" src="img/home/livemessage.png" alt="message"><span ng-if="mcount">{{mcount}}</span></span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="question">
+        <img class="imgLogo" src="img/home/icon-question.png" alt="asking question"/>
+    </div>
+
+</div>

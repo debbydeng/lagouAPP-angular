@@ -1,0 +1,516 @@
+html body {
+  position: relative;
+  font-size: 14px;
+  height: 100%; }
+  html body .outerDiv {
+    height: 100%; }
+
+ul {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0; }
+
+ul li {
+  list-style-type: none; }
+
+.red {
+  color: red; }
+
+.grey {
+  color: grey; }
+
+.green {
+  color: #00b386;
+  cursor: pointer; }
+
+.bold {
+  font-weight: bold; }
+
+.imgLogo {
+  width: 80px;
+  height: 80px; }
+
+.input-group-addon img {
+  width: 20px;
+  height: 20px; }
+
+.md-logo {
+  width: 50px;
+  height: 50px; }
+
+.sm-logo {
+  width: 30px;
+  height: 30px; }
+
+.xs-logo {
+  width: 15px;
+  height: 15px; }
+
+.skin {
+  width: 100%;
+  height: 100%; }
+  .skin img {
+    width: 100%;
+    height: 100%; }
+  .skin .fix {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%;
+    background: #00b386;
+    border: none;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em; }
+
+.login, .register {
+  height: 100%;
+  background: url("../img/home/screen-bg.png");
+  background-size: cover;
+  position: relative; }
+  .login .invalidMsg .validation-invalid, .register .invalidMsg .validation-invalid {
+    width: 150px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 5%;
+    position: absolute;
+    left: calc(50% - 75px);
+    bottom: 50px;
+    color: white;
+    padding: 10px; }
+  .login .logo, .register .logo {
+    padding: 50px 0 25px 0; }
+    .login .logo img, .register .logo img {
+      width: 100px;
+      height: auto; }
+  .login .input-group, .register .input-group {
+    margin-bottom: 2px; }
+    .login .input-group .input-group-addon, .register .input-group .input-group-addon {
+      background: #322b2c;
+      border: none; }
+    .login .input-group input, .register .input-group input {
+      height: 40px;
+      background: rgba(56, 57, 48, 0.5);
+      border: none;
+      color: white; }
+    .login .input-group .border, .register .input-group .border {
+      width: 1px;
+      border: 1px solid #ccc; }
+    .login .input-group .valCode, .register .input-group .valCode {
+      background: rgba(56, 57, 48, 0.5); }
+    .login .input-group .getVal, .register .input-group .getVal {
+      padding: 15px;
+      color: #00b386; }
+  .login .forget-pwd, .register .forget-pwd {
+    color: #ccc;
+    margin: 15px 0 50px 0; }
+    .login .forget-pwd span, .register .forget-pwd span {
+      padding-left: 15px; }
+  .login .button-group button, .register .button-group button {
+    border-radius: 2px;
+    margin-bottom: 30px; }
+  .login .button-group .log-in, .register .button-group .log-in {
+    background: #00b386;
+    color: white; }
+  .login .button-group .register, .register .button-group .register {
+    border: 1px solid #00b386;
+    color: #00b386;
+    background: transparent; }
+
+.firstPage {
+  background-color: #f0f1f5;
+  position: relative;
+  padding-bottom: 108px; }
+  .firstPage .search {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: transparent;
+    padding: 10px 0;
+    left: 0;
+    top: 0; }
+    .firstPage .search.changeBg {
+      background: #00b386; }
+    .firstPage .search input {
+      width: 300px;
+      height: auto;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 10px;
+      background: white; }
+  .firstPage .advertise {
+    background-color: white; }
+    .carousel {
+      height: 250px;
+      overflow: hidden; }
+      .carousel .carousel-indicators li {
+        width: 5px;
+        height: 5px;
+        margin-right: 8px;
+        background: #ccc;
+        border: none; }
+      .carousel .carousel-indicators li.active {
+        width: 8px;
+        height: 5px;
+        border-radius: 30%;
+        background: white; }
+      .carousel .item {
+        height: 250px; }
+        .carousel .item .banner {
+          width: 100%;
+          height: 250px; }
+        .carousel .item .carousel-caption img {
+          width: 100px;
+          height: 40px; }
+        .carousel .item .carousel-caption .blue {
+          color: cornflowerblue; }
+    .firstPage .advertise .line {
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, #00b386 50%, orangered 50%); }
+    .firstPage .advertise .ads {
+      margin-bottom: 15px; }
+      .firstPage .advertise .ads li {
+        margin: 20px 0 10px 0; }
+        .firstPage .advertise .ads li div {
+          margin-bottom: 20px; }
+  .firstPage .recommend {
+    background: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom: 0;
+    letter-spacing: 5px; }
+  .position-list {
+    background: white; }
+    .position-list ul li {
+      padding: 15px 0;
+      border-top: 1px solid #edebde; }
+      .position-list ul li .details .intro {
+        font-size: 10px;
+        color: #667479; }
+      .position-list ul li .date {
+        margin-top: 45px;
+        color: #667479; }
+
+.home-message {
+  padding-bottom: 108px; }
+  .home-message .message-title .top {
+    font: 1.5em/1.1 bold;
+    padding: 15px;
+    border-bottom: 1px solid #edebde; }
+  .home-message .message-title .alert {
+    font-size: 1.1em;
+    border-bottom: 1px solid #edebde; }
+  .home-message .message-title ul li {
+    padding: 20px 0 15px 0; }
+    .home-message .message-title ul li p {
+      margin-top: 15px; }
+  .bgColor {
+    width: 100%;
+    height: 15px;
+    background: #e7ece8; }
+  .home-message .message-list .media {
+    padding: 10px; }
+    .home-message .message-list .media .media-body {
+      height: 80px;
+      width: 10%;
+      padding-left: 25px;
+      border-bottom: 1px solid #edebde;
+      vertical-align: middle; }
+      .home-message .message-list .media .media-body .media-heading {
+        font: 1.5em/1.2 bold; }
+      .home-message .message-list .media .media-body p {
+        height: 1.5em;
+        padding-right: 10px;
+        overflow: hidden; }
+      .home-message .message-list .media .media-body span {
+        margin-top: -2em; }
+
+.home-community {
+  padding-bottom: 108px; }
+  .home-community .header {
+    padding: 10px 15px; }
+    .home-community .header span {
+      margin-top: 15px; }
+  .home-community .carousel .carousel-inner .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 10px 15px 30px 15px;
+    background: rgba(0, 0, 0, 0.5);
+    letter-spacing: 3px; }
+  .home-community .carousel .carousel-indicators {
+    margin-bottom: 0; }
+  .home-community .hot {
+    padding: 20px 15px; }
+    .home-community .hot img {
+      width: 30px;
+      height: 15px; }
+  .home-community .article {
+    padding-top: 50px; }
+    .home-community .article h3 {
+      margin: 20px 0;
+      font-weight: bold; }
+    .home-community .article .people {
+      margin: 20px 0; }
+  .home-community .question {
+    position: fixed;
+    right: 15px;
+    bottom: 128px; }
+
+.question .header {
+  position: relative;
+  background: #f7f7f6;
+  height: 80px;
+  padding: 10px;
+  font-size: 1.6em; }
+  .question .header span.pull-left {
+    margin-top: 40px;
+    transform: translateY(-70%);
+    -webkit-transform: translateY(-70%); }
+  .question .header .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+.question .content button {
+  display: block;
+  margin: 20px 0;
+  padding: 10px 20px;
+  border-radius: 20px; }
+.question .content h3 {
+  margin: 20px 0; }
+.question .content p.grey {
+  margin: 15px 0; }
+.question .feedback {
+  padding: 10px 0;
+  border-top: 1px solid #edebde; }
+  .question .feedback img {
+    height: 37px; }
+
+.exit {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  bottom: 120px;
+  color: white; }
+
+.appear {
+  display: block; }
+
+.aboutme {
+  background: #e7ece8;
+  height: 100%;
+  padding-bottom: 108px; }
+  .aboutme .header {
+    padding: 15px;
+    position: relative;
+    height: 250px;
+    background: #00b386;
+    color: white; }
+    .aboutme .header .myself {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%); }
+      .aboutme .header .myself .headPic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: none; }
+      .aboutme .header .myself p.name {
+        margin-top: 25px; }
+    .aboutme .header .edit {
+      float: right; }
+      .aboutme .header .edit input {
+        width: 100px;
+        height: 30px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        color: white;
+        padding-left: 45px;
+        background: url("../img/home/icon-edit.png") #007c5e 10px top no-repeat;
+        background-size: 30%; }
+    .aboutme .header .waveborder {
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 10px;
+      background: url(../img/home/wave-border.png) no-repeat;
+      background-size: 100%; }
+  .aboutme .cv, .aboutme .set {
+    background: white;
+    margin-bottom: 15px; }
+    .aboutme .cv li, .aboutme .set li {
+      padding: 20px 10px; }
+      .aboutme .cv li .pic, .aboutme .set li .pic {
+        float: left;
+        margin-right: 25px;
+        margin-top: -2px; }
+        .aboutme .cv li .pic img, .aboutme .set li .pic img {
+          width: 30px;
+          height: 30px; }
+      .aboutme .cv li .hotIcon, .aboutme .set li .hotIcon {
+        width: 60px;
+        height: 30px; }
+
+.searchPage {
+  height: 100%;
+  background: #e7ece8; }
+  .searchPage .header {
+    background: #f6f8f7;
+    padding: 15px; }
+    .searchPage .header input {
+      width: calc(100% - 120px);
+      height: 40px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      color: black;
+      background: url("../img/home/icon-search.png") 10px 5px no-repeat #e6e7e9;
+      background-size: 30px;
+      padding-left: 50px; }
+    .searchPage .header div {
+      margin: 10px auto; }
+  .searchPage .guess {
+    padding: 25px 15px; }
+    .searchPage .guess ul li {
+      border: none;
+      background: white; }
+  .searchPage .history {
+    background: white; }
+    .searchPage .history li {
+      padding: 15px; }
+      .searchPage .history li.item {
+        border-bottom: 1px solid #e7ece8; }
+      .searchPage .history li img {
+        margin-right: 15px; }
+
+.searchResult {
+  height: 100%;
+  background: #f0f0f5; }
+  .searchResult .header {
+    background: #f6f8f7;
+    padding: 15px; }
+    .searchResult .header input {
+      width: calc(100% - 100px);
+      height: 40px;
+      border-radius: 20px;
+      border: none;
+      outline: none;
+      color: black;
+      background: url("../img/home/icon-search.png") 10px 5px no-repeat #e6e7e9;
+      background-size: 30px;
+      padding-left: 50px;
+      margin-left: 20px; }
+  .searchResult .searchOps {
+    padding: 15px;
+    background: white; }
+  .searchResult .no-data .nothing {
+    padding: 25px 50px;
+    border-bottom: 3px dotted #ccc;
+    margin-bottom: 20px; }
+
+.job-info {
+  padding: 100px 0 15px 0; }
+  .job-info .header {
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
+    background: #f6f8f7;
+    padding: 25px 15px;
+    font-size: 1.5em; }
+    .job-info .header .image {
+      transform: translateY(-25%); }
+  .job-info .job-detail {
+    padding-left: 15px; }
+    .job-info .job-detail h2 {
+      margin-bottom: 30px; }
+    .job-info .job-detail .intro li {
+      float: left;
+      margin-right: 20px; }
+    .job-info .job-detail .intro img {
+      width: 25px;
+      height: 25px; }
+    .job-info .job-detail .lure {
+      padding: 10px 0 15px 0;
+      border-bottom: 1px solid #f6f8f7; }
+    .job-info .job-detail .company-logo {
+      padding: 15px 0; }
+      .job-info .job-detail .company-logo .cert {
+        height: 25px; }
+      .job-info .job-detail .company-logo .go {
+        float: right;
+        padding: 20px 0; }
+  .job-info .job-description {
+    padding-left: 15px; }
+    .job-info .job-description .title {
+      padding: 15px 0;
+      border-bottom: 1px solid #f6f8f7; }
+    .job-info .job-description ul {
+      float: left;
+      padding: 15px 0; }
+    .job-info .job-description .describe li {
+      margin: 10px 0; }
+  .job-info .address .title {
+    padding: 15px 0;
+    border-bottom: 1px solid #f6f8f7; }
+  .job-info .address .add {
+    padding: 15px 0; }
+
+.pages {
+  position: fixed;
+  border-top: 1px solid #edebde;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #f6f8f7;
+  margin-bottom: 0; }
+  .pages li {
+    list-style-type: none;
+    text-align: center; }
+    .pages li a {
+      color: #9e9e9e;
+      text-decoration: none; }
+      .pages li a div {
+        width: 70px;
+        height: 70px;
+        padding: 10px; }
+      .pages li a span.active {
+        color: #00b386; }
+
+.job-description ul li, .guess ul li {
+  padding: 5px 10px;
+  border: 1px solid #00b386;
+  border-radius: 20px;
+  margin: 5px 10px; }
+
+#map {
+  width: 100%;
+  height: 500px;
+  padding: 10px; }
+
+.modal-dialog {
+  border: 10px solid rgba(0, 2, 2, 0.3); }
+
+/*# sourceMappingURL=index.css.map */

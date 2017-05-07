@@ -1,0 +1,22 @@
+[
+  {
+    "imgUrl":"img/home/banner1.png",
+    "alt":"banner1",
+    "content":"<p>红心美凯龙</p><h5>满足每一个人对家的想象</h5>"
+  },
+  {
+    "imgUrl":"img/home/banner2.png",
+    "alt":"banner2",
+    "content":"<div><img  src='img/home/icon-telecome.png'/></div><h3><span class='blue'>奕迅，</span>JAVA大牛的探索家</h3><input value='3月11日 奕迅.JAVA武汉招聘专场'>"
+  },
+  {
+    "imgUrl":"img/home/banner3.png",
+    "alt":"banner3",
+    "content":""
+  },
+  {
+    "imgUrl":"img/home/banner4.png",
+    "alt":"banner4",
+    "content":"<div ><p>24小时</p><h3>急速入职</h3><div class='pull-right red'><h4>第22弹</h4><p>3.6日-3.10日</p></div></div>"
+  }
+]

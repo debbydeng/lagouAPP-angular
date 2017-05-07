@@ -1,0 +1,34 @@
+[
+  { "id":1,
+    "norUrl":"img/home/icon_home_nor.png",
+    "preUrl":"img/home/icon_home_pre.png",
+    "alt":"首页",
+    "word":"首页",
+    "cate":".firstPage"
+  },
+  {
+    "id":2,
+    "norUrl":"img/home/icon_message_nor.png",
+    "preUrl":"img/home/icon_message_pre.png",
+    "alt":"消息",
+    "word":"消息",
+    "cate":".message"
+  },
+  {
+    "id":3,
+    "norUrl":"img/home/icon_community_nor.png",
+    "preUrl":"img/home/icon_community_pre.png",
+    "alt":"言职",
+    "word":"言职",
+    "cate":".community"
+  },
+  {
+    "id":4,
+    "norUrl":"img/home/icon_chat_emoji_nor_b.png",
+    "preUrl":"img/home/icon_chat_emoji_pre_b.png",
+    "alt":"我",
+    "word":"我",
+    "cate":".me"
+  }
+
+]

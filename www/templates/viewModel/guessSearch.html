@@ -1,0 +1,6 @@
+<div class="guess">
+    <p>猜你要搜</p>
+    <ul>
+        <li ng-click="getSearch($index,list); saveSearch()" ui-sref="searchResult"  class="green pull-left" ng-repeat="item in list">{{item}}</li>
+    </ul>
+</div>

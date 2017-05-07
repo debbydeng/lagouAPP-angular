@@ -1,0 +1,43 @@
+<div class="text-center">
+    <div class="logo">
+        <img src="img/home/lagou-logo.png" alt="lagou-logo"/>
+    </div>
+    <form name="myform" id="myform" autocomplete="off">
+        <div class="input-group">
+            <span class="input-group-addon"><img ng-src="{{src}}"/></span>
+            <input type="tel" name="account" maxlength="11" ng-focus="src=srcAcctActive" ng-blur="src=srcAcct"
+                   ng-init="src=srcAcct"
+                   class="form-control" ng-model="user.account" validator="phone"  message-id="accountMsg"
+                   placeholder="{{input1}}"/>
+        </div>
+
+        <div class="input-group">
+        <span class="input-group-addon">
+            <img ng-src="{{srcPwd}}"/>
+        </span>
+            <input name="password" ng-focus="srcPwd=srcPwdActive" ng-blur="srcPwd=srcPwdNormal"
+                   ng-init="srcPwd=srcPwdNormal"
+                   class="form-control" ng-model="user.password" validator="password" valid-method="blur"
+                   placeholder="{{input2}}" message-id="pwdMsg">
+            <span ng-if="input2=='请输入验证码'" class="input-group-addon valCode">
+                <span class="border"></span><span ng-click="user.submit(myform);" class="getVal">{{valCode}}</span>
+            </span>
+        </div>
+
+        <p class="forget-pwd" ng-bind-html="word">
+        </p>
+        <div class="button-group">
+            <button class="btn btn-lg btn-block log-in" ng-disabled="!user.checkValid(myform)"
+                   ng-click="user.submit(myform)">{{btn1}}{{user.checkValid(myform)}}
+            </button>
+            <button role="button" ng-click="page()" class="btn btn-lg btn-block register">{{btn2}}</button>
+        </div>
+    </form>
+    <div class="invalidMsg" >
+        <div id="accountMsg" ng-if="invalidRegister"></div>
+        <div class="validation-invalid" ng-if="invalidLogin">账号，用户名不匹配</div>
+    </div>
+    <!--test-->
+
+
+</div>

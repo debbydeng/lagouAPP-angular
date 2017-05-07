@@ -1,0 +1,67 @@
+<div class="advertise">
+    <div id="carousel-banner" class="carousel slide" data-ride="carousel">
+
+         <ol class="carousel-indicators">
+        <li ng-repeat="i in [0,1,2,3]" ng-class={active:$index==0} data-target="#carousel-banner" data-slide-to="{{i}}"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <div ng-repeat="list in banner" class="item" ng-class={active:$index==0}>
+            <img class="banner" ng-src="{{list.imgUrl}}" alt="banner"/>
+       <!--
+               <div  class="image" style="background:url('{{list.imgUrl}}');background-size:cover"></div>
+       -->
+        <div class="carousel-caption" ng-bind-html="list.content">
+        </div>
+    </div>
+</div>
+        <!--
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#carousel-banner" data-slide-to="0"></li>
+            <li  data-target="#carousel-banner" data-slide-to="1"></li>
+            <li  data-target="#carousel-banner" data-slide-to="2"></li>
+            <li  data-target="#carousel-banner" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" >
+            <div class="item active">
+                <img src="img/home/banner1.png" alt="slide1">
+                <div class="carousel-caption">
+                    <p>红心美凯龙</p><h1>满足每一个人对家的想象</h1>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/home/banner2.png" alt="slide2">
+                <div class="carousel-caption">
+                    <div><img src='img/home/icon-telecome.png'/></div><h1><span>奕迅，</span>JAVA大牛的探索家</h1><input type='text' value='3月11日 奕迅.JAVA武汉招聘专场'/>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/home/banner3.png" alt="slide3">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/home/banner4.png" alt="slide4">
+                <div class="carousel-caption">
+                    <p>24小时</p><h1>急速入职</h1><div><h2>第22弹</h2><p>3.6日-3.10日</p></div>
+                </div>
+            </div>
+
+        </div>
+        -->
+    </div>
+    <!--设置一条彩色的下边框-->
+    <div class="line"></div>
+
+    <div class="container-fluid ads" >
+        <ul>
+            <li ng-repeat="case in ads"  class="col-xs-3">
+                <div>
+                    <img ng-src="{{case.imgUrl}}" alt="{{case.alt}}">
+                </div>
+                <span>{{case.words}}</span>
+            </li>
+        </ul>
+    </div>
+
+</div>

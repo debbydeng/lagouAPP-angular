@@ -1,0 +1,96 @@
+<div class="job-info ">
+    <div class="header text-center">
+        <a ui-sref="home.firstPage" class="pull-left"><img class="sm-logo" src="img/home/icon-back.png" alt="goback"/></a>
+        <span>{{title}}</span>
+        <div class="pull-right image">
+            <span><img src="img/home/icon-share.png" title="share"/></span>
+            <span><img  src="img/home/icon-favorite.png" title="favor"/></span>
+        </div>
+    </div>
+<div>{{title}}</div>
+    <div class="job-detail">
+        <h2>{{position.company}} <span class="red">【{{position.salary}}】</span></h2>
+        <ul class="intro">
+            <li >
+                <span><img src="img/home/icon-location.png" title="local"/></span>
+                <span>{{position.location}}</span>
+            </li>
+            <li >
+                <span><img src="img/home/icon-experience.png" title="experience"/></span>
+                <span>{{position.experience}}</span>
+            </li>
+            <li>
+                <span><img src="img/home/icon-degree.png" title="degree"/></span>
+                <span>{{position.degree}}</span>
+            </li>
+            <li>
+                <span><img src="img/home/icon-fulltime.png" title="jobType"/></span>
+                <span>{{position.jobType}}</span>
+            </li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="lure grey">职位诱惑：{{position.lure}}</div>
+
+        <div class="company-logo">
+            <div class="row">
+                <div class="col-xs-3">
+                    <img class="imgLogo" ng-src="{{position.imgUrl}}" title="companyLogo"/>
+                </div>
+                <div class="col-xs-8">
+                    <p><strong>{{position.company}}</strong>
+                        <span><img class="cert" ng-src="{{position.proveImg}}" title="proveImg"/></span>
+                    </p>
+                    <div class="grey">
+                        <span>{{position.type}}/{{position.invest}}/{{position.qty}}</span>
+                        <p>已有<span class="green">{{position.assess}}</span>条面试评价</p>
+                    </div>
+                </div>
+                <div class="col-xs-1">
+                    <img class="go" src="img/home/icon-go.png" alt="go"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bgColor"></div>
+    <div class="job-description">
+        <div class="title">
+        <img class="sm-logo" src="img/home/icon-jobdescription.png" alt="jobDes">
+        <strong>职位描述</strong>
+        </div>
+        <ul>
+            <li class="pull-left green" ng-repeat="skill in list">{{skill}}</li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="describe" ng-bind-html="position.description"></div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="address container-fluid">
+        <div class="title">
+            <img class="sm-logo" src="img/home/icon-location.png" alt="jobADD">
+            <strong>工作地址</strong>
+        </div>
+        <div>
+            <div class="add" data-toggle="modal" data-target="#myModal">
+            <a href="">{{position.detailADD}}</a>
+            <span class="pull-right green" >查看地图</span>
+            </div>
+                <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                            <h1>工作地址：</h1>
+                        </div>
+                        <div class="modal-body">
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>

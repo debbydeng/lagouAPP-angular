@@ -1,0 +1,22 @@
+﻿{
+    "id":"PL1",
+    "imgUrl":"img/home/defCopImg.png",
+    "title":"高级前段工程师",
+    "company":"Altenchina",
+    "location":"上海",
+    "experience":"5-10年",
+    "degree":"本科",
+    "invest":"上市公司",
+    "qty":"2000人以上",
+    "type":"企业服务，其他",
+    "salary":"10k-20k",
+    "date":"03月01日",
+	"jobType":"全职",
+	"proveImg":"img/home/icon-certificate.png",
+	"assess":"170",
+	"lure":"大牛多，发展潜力大，发展好，福利好",
+	"jobADD":"张江",
+	"detailADD":"上海-上海-浦东新区 亮秀路112号Y1座706室",
+	"description":  "<p>岗位职责：</p><p>负责公司各产品线前端页面JS效果实现及编写</p><p>任职要求：</p><ol> <li>精通JavaScript，熟悉ES2016</li> <li>精通CSS,并熟悉CSS3特性</li> <li>熟悉至少一个前端框架，包括angularJS, React, Vue等，并了解其原理</li> <li>对Web前端的性能优化和工程化有一定的理解和相关实践</li> <li>熟悉前后端开发经验，了解微服务架构</li></ol><p>符合以下条件者优先：</p><ol><li>有过移动端项目开发经验，并有实际案例</li><li>熟练使用HTML5，CSS3，Highcharts</li><li>熟悉nginx,docker</li><li>了解前端架构</li></ol>",
+	"requirements":["中级","初级","前端","node.js","Ajax","HTML","JavaScript"]
+  }

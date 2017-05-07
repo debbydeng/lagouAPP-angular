@@ -1,0 +1,44 @@
+<div class="home-message">
+    <div class=" message-title">
+        <p class="top text-center">消息列表</p>
+        <p class="alert alert-dismissible">
+            <img class="sm-logo" src="img/home/icon-message-chat.png" alt="chat"/>
+            <span>苦苦等待，不如主动出击，去沟通专场聊offer</span>
+            <button type="button" class="close" data-dismiss="alert"><span>&times;</span>
+            </button>
+        </p>
+        <div class="container-fluid ">
+            <ul>
+                <li ng-repeat="item in list" class="col-xs-4 text-center">
+                    <img ng-src="{{item.url}}" alt="{{item.alt}}"/>
+                    <p>{{item.words}}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="clearfix bgColor"></div>
+    <div class=" message-list container-fluid ">
+        <div class="media">
+            <a class="pull-left" href="">
+                <img class="media-object imgLogo" src="img/home/see-me-read.png">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">谁看过我</h4>
+                <p>暂无消息</p>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+        <div class="media">
+            <a class="pull-left" href="">
+                <img class="media-object imgLogo" src="img/home/icon_vivi.png"/>
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">拉勾gogo</h4>
+                <p>周六来约啊！阿里HR现场坐镇，为你的表现喝彩</p><span class="pull-right">···</span>
+            </div>
+
+        </div>
+    </div>
+
+</div>

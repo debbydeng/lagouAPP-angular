@@ -1,0 +1,15 @@
+﻿  {
+    "id":"PL4",
+    "imgUrl":"img/home/defCopImg.png",
+    "title":"前端开发",
+    "company":"阿基米德",
+    "location":"上海",
+    "experience":"3-5年",
+    "degree":"大专",
+    "invest":"A轮及以上",
+    "qty":"500人以上",
+    "type":"移动互联网",
+    "salary":"10k-25k",
+    "date":"03月03日",
+	"jobType":"全职"
+  }
